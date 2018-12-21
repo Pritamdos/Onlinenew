@@ -1,4 +1,5 @@
 <?php
+/*  Comment Added 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -19,6 +20,7 @@ $dbname = "oah";
 	if(!$result){
 		die ('SQL Error: ' . mysql_error($conn));
 	}
+Comment Ended */
 ?>
 
 <!DOCTYPE html>
@@ -222,6 +224,7 @@ $dbname = "oah";
                         </tr>
                          <tbody class="tbodys experts">
 							<?php
+							/*  Comment Added
 							    if(isset($_POST["exp_submit"])){	
 									$exp_select = $_POST["exp_select"];
 									while ($row = mysqli_fetch_array($result)){
@@ -325,6 +328,7 @@ $dbname = "oah";
 												echo '</tr>';
 									}							    
 								}
+							Comment Ended */ 
 							?>
                         </tbody>
                     </table>

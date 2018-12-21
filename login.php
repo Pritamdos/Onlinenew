@@ -154,13 +154,15 @@
 
 
 <?php
+/*  Comment Added 
 if(isset($_COOKIE['email']) AND isset($_COOKIE['pass'])){
     $email = $_COOKIE['email'];
 	 $pass  = $_COOKIE['pass'];
 }
+Comment Ended */ 
 ?>
 
 <script>
-	      document.getElementById("signuserid").value = "<?php echo $email; ?>";
-	      document.getElementById("signpassword").value = "<?php echo $pass; ?>";
+	      document.getElementById("signuserid").value = "<?php /* echo $email; */ ?>";
+	      document.getElementById("signpassword").value = "<?php /* echo $pass; */ ?>";
 </script>

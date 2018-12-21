@@ -420,7 +420,52 @@ if(isset($_POST['reviewsubmit'])){
 	if ($conn->query($sql) === TRUE) {
 		$message = "Review is Added";
       echo "<script type='text/javascript'>alert('$message');</script>";   
-	  // echo "<script>setTimeout(\"location.href = 'admindashboard.php';\",50);</script>";
+	   echo "<script>setTimeout(\"location.href = 'admindashboard.php';\",50);</script>";
+	} 
+	else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+}
+
+
+//TO ADD EXPERT DATA OF USER
+if(isset($_POST['expertsubmit'])){
+	
+  //VARIABLE DECLARATION	
+	$exp_name = $_POST['exp_name'];
+	$exp_qualification = $_POST['exp_qualification'];
+	$exp_specialization = $_POST['exp_specialization'];
+	$exp_email = $_POST['exp_email'];
+	$exp_client_rating = $_POST['exp_client_rating'];
+	$exp_location = $_POST['exp_location'];
+	$exp_order_c = $_POST['exp_order_c'];
+	$exp_order_p = $_POST['exp_order_p'];
+	$exp_status = $_POST['exp_status'];
+	
+  //FILE UPLOADING	
+  if (isset($_FILES["file"]["name"])){
+    $filename = $_FILES["file"]["name"];
+    $tmp_name = $_FILES['file']['tmp_name'];
+    $error = $_FILES['file']['error'];
+
+    if (!empty($filename)) {
+        $location = 'Image_Source/';
+        if  (move_uploaded_file($tmp_name, $location.$filename)){
+        }
+      }  
+		else{
+		   $message = "Please upload correct file!";
+		   echo "<script type='text/javascript'>alert('$message');</script>"; 
+		}
+	}
+	
+   $sql = "INSERT INTO `expert_data` (`name`,`qualification`,`specialization`,`email`,`client_rating`,`location`,`order_c`,`order_p`,`status`,`image_path` ) 
+                             VALUES ('$exp_name','$exp_qualification','$exp_specialization','$exp_email','$exp_client_rating','$exp_location','$exp_order_c','$exp_order_p','$exp_status','$filename');";
+
+	if ($conn->query($sql) === TRUE) {
+		$message = "Review is Added";
+      echo "<script type='text/javascript'>alert('$message');</script>";   
+	   echo "<script>setTimeout(\"location.href = 'admindashboard.php';\",50);</script>";
 	} 
 	else {
 		echo "Error: " . $sql . "<br>" . $conn->error;

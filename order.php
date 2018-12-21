@@ -1,10 +1,12 @@
 <?php
+/*  Comment Added 
 session_start();
 if($_SESSION['email']){
 }
 else{
   header("location: login.php");
 }
+Comment Ended */
 ?>
 
 <!DOCTYPE html>
@@ -186,7 +188,7 @@ else{
 														<input type="file" name="file"><br><br>
 												   </div>
 												   
-												   <input type = "hidden" id="ovalidate" name="ovalidate" value = "<?php echo $_SESSION['email'];?>" /> 
+												   <input type = "hidden" id="ovalidate" name="ovalidate" value = "<?php /* echo $_SESSION['email']; */ ?>" /> 
 												   	
 											</div>
 											<div class="submit-button-sections-stepper">

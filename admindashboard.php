@@ -1,5 +1,5 @@
 <?php
-
+/*  Comment Added
     session_start();
     if($_SESSION['email']){
 	}
@@ -38,6 +38,7 @@
 	if(!$result OR !$call_result OR !$reg_result OR !$ord_result OR !$sub_result){
 		die ('SQL Error: ' . mysql_error($conn));
 	}
+Comment Ended */
 ?>
 
 <!DOCTYPE html>
@@ -230,6 +231,7 @@
 						
 						      <tbody class="tbodys">
                           <?php
+						    /*  Comment Added 
 									while ($row = mysqli_fetch_array($ord_result))
 									{
 										$files_field= $row['filepath'];
@@ -248,6 +250,7 @@
 													<td>'.$row['timestamp'].'</td>
 											   </tr>';
 									}
+							    Comment Ended */
 							    ?>
                         </tbody>
 						
@@ -286,7 +289,8 @@
                             <th>Creation Date</th>    
                         </tr>
 						     <tbody class="tbodys">
-                         <?php
+                             <?php
+							/*  Comment Added
 									while ($row = mysqli_fetch_array($result))
 									{
 										echo '<tr class="each-rows-secss">
@@ -298,7 +302,8 @@
                                      <td>'.$row['timestamp'].'</td>
 											   </tr>';
 									}
-							   ?>
+						    Comment Ended */
+						    ?>
                         </tbody>
                     </table>
                  </div>
@@ -337,6 +342,7 @@
                         
 						     <tbody class="tbodys">
                          <?php
+						 /*  Comment Added
 									while ($row = mysqli_fetch_array($call_result))
 									{
 										echo '<tr class="each-rows-secss">
@@ -348,6 +354,7 @@
                                      <td>'.$row['timestamp'].'</td>
 											   </tr>';
 									}
+						Comment Ended */
 							   ?>
                         </tbody> 
 			           </table>
@@ -386,6 +393,7 @@
                         </tr>
                         <tbody class="tbodys">
                          <?php
+						/*  Comment Added
 									while ($row = mysqli_fetch_array($reg_result))
 									{
 										echo '<tr class="each-rows-secss">
@@ -397,6 +405,7 @@
                                      <td>'.$row['timestamp'].'</td>
 											   </tr>';
 									}
+						Comment Ended */
 							   ?>
                         </tbody> 
                     </table>
@@ -437,6 +446,7 @@
                         
 						     <tbody class="tbodys">
                          <?php
+							/*  Comment Added
 									while ($row = mysqli_fetch_array($result))
 									{
 										echo '<tr class="each-rows-secss">
@@ -448,6 +458,7 @@
                                      <td>'.$row['timestamp'].'</td>
 											   </tr>';
 									}
+							Comment Ended */ 
 							   ?>
                         </tbody>
                     </table>
@@ -482,12 +493,14 @@
                         
 						     <tbody class="tbodys">
                          <?php
+						 /*  Comment Added
 									while ($row = mysqli_fetch_array($sub_result))
 									{
 										echo '<tr class="each-rows-secss">
 												<td>'.$row['email'].'</td>
 											   </tr>';
 									}
+						Comment Ended */ 
 							   ?>
                         </tbody> 
 			           </table>
@@ -573,7 +586,7 @@
             <div class="wrapper_container">
 				<div class="order-details-sec">
 					<span class="order-details-headings">
-						Add Review of User
+						Add Expert
 					<span>
 				</div>
 				<form method="post" action="connection.php" enctype="multipart/form-data">
@@ -604,6 +617,12 @@
 									</div>
 									<div class="each-rows-inputs">
 										<input type="text" name="exp_client_rating" id="exp_client_rating" placeholder="Enter client Rating" required="true" />
+										<span class="users-pp">
+											<i class="fa fa-clock-o" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="each-rows-inputs">
+										<input type="text" name="exp_location" id="exp_location" placeholder="Enter location" required="true" />
 										<span class="users-pp">
 											<i class="fa fa-clock-o" aria-hidden="true"></i>
 										</span>

@@ -98,6 +98,7 @@
 							<!--- Review Boxes 1 - 8 Started --->
 							
 							<?php
+							/*  Comment Added 
 									$servername = "localhost";
 									$username = "root";
 									$password = "";
@@ -224,7 +225,60 @@
 													}
 											    }
 											}  
+									Comment Ended */
 									?>
+									
+									                            <div class="card-outer-online-reviews zoomIn animatable">
+                                <div class="card-inner-section-reviews" id="reviews-deatil-open">
+                                    <div class="rv-outers-top">
+                                        <div class="rv-left-top">
+                                            <span class="reviews-tag">Management</span>
+                                            <span class="reviews-details">
+                                            <i class="word_count_deadline">Essay: 2 Pages, Deadline:  
+                                                  3 days</i>
+                                            </span>
+                                        </div>
+                                        <div class="rv-right-top">
+                                          <span class="text-uppercase review-star">
+                                            <i class="fa fa-star stars" aria-hidden="true"></i>                                        
+                                            <i class="fa fa-star stars" aria-hidden="true"></i>                                        
+                                            <i class="fa fa-star stars" aria-hidden="true"></i>                                        
+                                            <i class="fa fa-star stars " aria-hidden="true"></i>                                        
+                                            <i class="fa fa-star stars" aria-hidden="true"></i>                                        
+                                          </span>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="rv-bottm-se">
+                                        <span class="rv-details">
+                                              Very well written...got an A, couldn't ask for anything more! Thank you for all your hard work!                        
+                                        </span>
+                                    </div>
+                                    <div class="rvt-bottm-se">
+                                        <span class="rvt-profiles-details">
+                                            <span class="us-p">
+                                                 <img src="./assets/images/profile-pic.jpg"/>
+                                            </span>
+                                            <div class="order-detailss">
+                                                <span class="user-id">
+                                                User Id: 196847
+                                                </span>
+                                                <i>United States <br>&nbsp; 05 Dec 2018 </i>
+                                            </div>
+                                           
+                                              
+                                       </span>
+                                    </div>
+
+                                </div>
+                            </div>
+									
+									
+									
+									
+									
+									
+									
 							<!--- Review Boxes 1 - 8 Ended   --->
 							
                         </div>

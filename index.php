@@ -630,7 +630,9 @@
                         <div class="lead-testimonial-cont">
                             <div class="lead-tstmnl-slider">
                                 <div class="main-gallery">     
+									
 									<?php
+									/*  Comment ADDED 
 											$servername = "localhost";
 											$username = "root";
 											$password = "";
@@ -684,7 +686,106 @@
 																	</div>
 																</div>';
 											}	
+									   Comment Added */
 									?>
+									
+									<div class="gallery-cell">
+                                        <div class="testimonial">
+                                            <div class="lead-tstmnl-slide item">
+                                                <div class="testimonail-outers-images">
+                                                    <div class="lead-tstmnl-img">
+                                                        <img src="https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/41521024_1106151129549575_801375296103120896_n.jpg?_nc_cat=110&_nc_ht=scontent.ffjr1-4.fna&oh=721f050cd1b1fc94bbc44e964df3606f&oe=5C75A338">
+                                                    </div>
+                                                </div>
+                                                <div class="lead-tstmnl-text-cont">
+                                                    <span class="lead-tstmnl-comment-sec">
+                                                        Ashley Thompson, Brisbane
+                                                    </span>
+                                                    <div class="hr-r">
+                                                        <span class="line">
+                                                        </span>
+                                                    </div>
+                                                    <ul class="lead-tstmnl-nm-dsg-rating">
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                                <div class="lead-tstmnl-text-cont">
+                                                    <span class="lead-tstmnl-comment">
+                                                        The assignment I received from OnlineAssignmenthelp.com really blew my mind! These guys know what they’re doing. They don’t
+                                                        mess up your paper and work hard so you can get a good grade.
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-cell">
+                                        <div class="testimonial">
+                                            <div class="lead-tstmnl-slide item">
+                                                <div class="testimonail-outers-images">
+                                                    <div class="lead-tstmnl-img">
+                                                        <img src="https://scontent.ffjr1-4.fna.fbcdn.net/v/t1.0-9/41521024_1106151129549575_801375296103120896_n.jpg?_nc_cat=110&_nc_ht=scontent.ffjr1-4.fna&oh=721f050cd1b1fc94bbc44e964df3606f&oe=5C75A338">
+                                                    </div>
+
+                                                </div>
+                                                <div class="lead-tstmnl-text-cont">
+                                                    <span class="lead-tstmnl-comment-sec">
+                                                        Michael Williams, Canberra
+                                                    </span>
+                                                    <div class="hr-r">
+                                                        <span class="line">
+
+                                                        </span>
+                                                    </div>
+
+                                                    <ul class="lead-tstmnl-nm-dsg-rating">
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-star-half" aria-hidden="true"></i>
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                                <div class="lead-tstmnl-text-cont">
+                                                    <span class="lead-tstmnl-comment">
+                                                        Never in my life I thought I’d ever get an A grade on my engineering assignment but here I am, and it’s all thanks to OnlineAssignmenthelp.com!
+                                                        You guys rock!
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									
+									
 								</div>
                             </div>
                         </div>

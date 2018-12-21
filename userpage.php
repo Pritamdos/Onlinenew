@@ -1,5 +1,5 @@
 <?php
-
+/*  Comment Added
 	session_start();
 	if($_SESSION['email']){
 	}
@@ -40,6 +40,7 @@
 	if(!$ord_result || !$result){
 		die ('SQL Error: ' . mysql_error($conn));
 	}
+Comment Ended */
 ?>
 
 <!DOCTYPE html>
@@ -98,7 +99,7 @@
 							</li>
 							
 							<li>
-							  <?php echo $_SESSION['email']; ?>
+							  <?php /* echo $_SESSION['email']; */ ?>
 							</li>
 							
 							<li>
@@ -208,7 +209,7 @@
 												</span>
 											</div>
 											
-											<input type = "hidden" id="pvalidate" name="pvalidate" value = "<?php echo $_SESSION['email'];?>" /> 
+											<input type = "hidden" id="pvalidate" name="pvalidate" value = "<?php /* echo $_SESSION['email']; */ ?>" /> 
 										  
 											<div class="submit-buttin-sections">
 												<button type="submit" id="updateprofile" name="updateprofile" class="save">
@@ -240,6 +241,7 @@
 								</tr>
 								<tbody>	
 								   <?php
+								    /*  Comment Added 
 									  while ($row = mysqli_fetch_array($ord_result))
 									  {
 										$files_field= $row['filepath'];
@@ -258,6 +260,7 @@
 													<td>'.$row['timestamp'].'</td>
 											   </tr>';
 									  }
+									Comment Ended */ 
 								   ?>
 								</tbody>
 						   </table>
@@ -295,7 +298,7 @@
 												</span>
 										   </div>
 										   
-										   <input type = "hidden" id="passvalidate" name="passvalidate" value = "<?php echo $_SESSION['email'];?>" /> 
+										   <input type = "hidden" id="passvalidate" name="passvalidate" value = "<?php /* echo $_SESSION['email']; */ ?>" /> 
 										  
 											<div class="submit-buttin-sections">
 												<button type="submit" id="updatepassword" name="updatepassword" class="save">
@@ -506,8 +509,8 @@ function checkPasscode() {
 </script>
 
 <script>
-   document.getElementById("pname").value = "<?php echo $name; ?>";
-   document.getElementById("pemail").value = "<?php echo $email; ?>";
-   document.getElementById("pphone").value = "<?php echo $phone; ?>";
-   document.getElementById("peducation").value = "<?php echo $education; ?>";
+   document.getElementById("pname").value = "<?php /* echo $name; */ ?>";
+   document.getElementById("pemail").value = "<?php /* echo $email; */ ?>";
+   document.getElementById("pphone").value = "<?php /* echo $phone; */ ?>";
+   document.getElementById("peducation").value = "<?php /* echo $education; */ ?>";
 </script>
